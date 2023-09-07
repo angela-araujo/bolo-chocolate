@@ -28,6 +28,13 @@
     </dependencies>
   </dependencyManagement>
   <dependencies>
+
+    <dependency>
+      <groupId>io.quarkus.resteasy.reactive</groupId>
+      <artifactId>resteasy-reactive-jsonb</artifactId>
+      <version>3.4.0.CR1</version>
+    </dependency>
+
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-smallrye-openapi</artifactId>
@@ -48,10 +55,10 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-jdbc-postgresql</artifactId>
     </dependency>
-    <dependency>
+    <!-- <dependency>
       <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-arc</artifactId>
-    </dependency>
+      <artifactId>quarkus-jdbc-mysql</artifactId>
+    </dependency> -->
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-junit5</artifactId>
@@ -74,10 +81,6 @@
           <execution>
             <goals>
               <goal>build</goal>
-              <!--  
-              <goal>generate-code</goal>
-              <goal>generate-code-tests</goal>
-              -->
             </goals>
           </execution>
         </executions>
